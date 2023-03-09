@@ -1,0 +1,35 @@
+.todos_page{
+    height: 700px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.todos_el_wrapper{
+    width: 420px;
+    height: 85px;
+
+    background: #F8CBA6;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todos_el{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 33px;
+
+    text-align: center;
+    color: #000000;
+}

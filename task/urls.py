@@ -8,6 +8,7 @@ from rest_framework_simplejwt.views import (
 
 urlpatterns = [
     path("tasks/", TaskList.as_view()),
+    path("tasks/statuses/", TaskStatusList.as_view()),
     path("task/create/", TaskCreate.as_view()),
     path("task/<int:pk>/", TaskDelete.as_view()),
     path("register/", UserCreate.as_view()),

@@ -10,17 +10,14 @@ class UserCreate(generics.CreateAPIView):
 
 
 class TaskList(generics.ListAPIView):
-    permission_classes = [IsAuthenticated]
     serializer_class = TaskSerializers
     queryset = Task.objects.all()
 
 
 class TaskCreate(generics.CreateAPIView):
-    permission_classes = [IsAuthenticated]
     serializer_class = TaskSerializers
 
 
 class TaskDelete(generics.RetrieveUpdateDestroyAPIView):
-    permission_classes = [IsAuthenticated]
     serializer_class = TaskSerializers
     queryset = Task.objects.all()
